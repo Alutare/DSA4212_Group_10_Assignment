@@ -226,3 +226,10 @@ __pycache__/
 .venv/
 __pycache__/
 .DS_Store
+
+# DSA4212 project
+data/
+runs/
+figures/
+*.pt
+*.bin

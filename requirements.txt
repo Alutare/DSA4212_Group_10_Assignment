@@ -1,0 +1,7 @@
+# torch is preinstalled on Colab. Everything else:
+numpy
+pandas
+matplotlib
+pyarrow
+tiktoken
+tokenizers
