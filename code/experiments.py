@@ -2,7 +2,9 @@
 
 >>> FREEZE BUDGET_SECONDS BEFORE RUNNING FINAL EXPERIMENTS AND DECLARE IT IN THE REPORT. <<<
 """
+import json
 import math
+from pathlib import Path
 
 # ---------------- declared compute budget (per complete training run) -------------
 BUDGET_SECONDS = 1800          # 30 min of optimisation-step wall-clock per run ...
@@ -10,6 +12,9 @@ HARDWARE = "1x NVIDIA Tesla T4 (16 GB), Google Colab, fp16 mixed precision"   # 
 TUNE_FRACTION = 1 / 6          # preliminary tuning runs use 5 min (excluded from budget)
 
 TOKENIZERS = {"gpt2": 50257, "bpe4k": 4096, "bpe8k": 8192, "bpe16k": 16384, "bpe32k": 32768}
+# Control for the tokenizer study: same vocabulary size as GPT-2 but merges learned on WikiText-103 train,
+# which separates "vocabulary size" from "in-domain merges".
+CONTROL_TOKENIZERS = {"bpe50k": 50257}
 
 # tokens/step is held at 16,384 for every size (micro-batch x accum x block)
 BASE = dict(n_layer=6, n_head=6, n_embd=384, block_size=256, batch_size=32, grad_accum=2,
@@ -23,6 +28,14 @@ SIZES = {   # non-embedding params ~ 12 * L * E^2
     "xl": dict(n_layer=12, n_head=12, n_embd=768, lr=4.0e-4,    # ~85M
                batch_size=16, grad_accum=4),
 }
+
+# Optional learning-rate overrides written by `selection.py tune_lr` from the 5-minute tuning runs
+# (validation BPB only). Committed under results/ so that the final runs are reproducible.
+TUNED_LR_PATH = Path(__file__).resolve().parent.parent / "results" / "tuned_lr.json"
+if TUNED_LR_PATH.exists():
+    for _k, _v in json.loads(TUNED_LR_PATH.read_text()).items():
+        if _k in SIZES and isinstance(_v, (int, float)):
+            SIZES[_k]["lr"] = float(_v)
 
 SHAPES = {  # ~10M non-embedding params, different depth/width trade-off
     "wide3":   dict(n_layer=3, n_head=9, n_embd=576),
@@ -45,6 +58,9 @@ def build_runs(study, tok="gpt2", size="m"):
     if study == "tokenizer":
         for t in TOKENIZERS:
             R.append(dict(config=f"tok_{t}", tok=t, args=cfg("m")))
+    elif study == "tokenizer_control":
+        for t in CONTROL_TOKENIZERS:
+            R.append(dict(config=f"tok_{t}", tok=t, args=cfg("m")))
     elif study == "size":
         for s in SIZES:
             R.append(dict(config=f"size_{s}_{tok}", tok=tok, args=cfg(s)))
@@ -60,9 +76,14 @@ def build_runs(study, tok="gpt2", size="m"):
             R.append(dict(config=f"lr_{lr:.1e}_{size}_{tok}", tok=tok, args=dict(base, lr=lr)))
     elif study == "batch":      # lr scaled by sqrt(batch ratio); stated as an assumption in the report
         base = cfg(size)
-        for tps, (bs, ga) in {4096: (16, 1), 16384: (32, 2), 65536: (32, 8)}.items():
+        T, micro = base["block_size"], base["batch_size"]
+        for tps in (4096, 16384, 65536):
+            mb = min(micro, tps // T)                 # never exceed the micro-batch known to fit in memory
+            ga = max(1, tps // (mb * T))
+            assert mb * ga * T == tps, (tps, mb, ga, T)
             R.append(dict(config=f"batch_{tps}_{size}_{tok}", tok=tok,
-                          args=dict(base, batch_size=bs, grad_accum=ga, lr=base["lr"] * math.sqrt(tps / 16384))))
+                          args=dict(base, batch_size=mb, grad_accum=ga,
+                                    lr=base["lr"] * math.sqrt(tps / 16384))))
     elif study == "efficiency":
         R.append(dict(config=f"eff_fp32_{size}_{tok}", tok=tok, args=cfg(size, dtype="float32")))
         R.append(dict(config=f"eff_fp16_{size}_{tok}", tok=tok, args=cfg(size)))
@@ -77,4 +98,4 @@ def build_runs(study, tok="gpt2", size="m"):
     return R
 
 
-STUDIES = ["tokenizer", "size", "shape", "context", "lr", "batch", "efficiency", "data", "seeds"]
+STUDIES = ["tokenizer", "tokenizer_control", "size", "shape", "context", "lr", "batch", "efficiency", "data", "seeds"]
