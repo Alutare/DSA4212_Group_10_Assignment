@@ -1,0 +1,2 @@
+size,vocab,params_total,params_nonemb,tok_per_s,mem_gb,tokens_in_budget,epochs,tokens_per_param_nonemb
+m,50257,30036864,10621824,16248.546453602614,8.323666944,29247383.616484705,0.2443390444150769,2.7535180037331353

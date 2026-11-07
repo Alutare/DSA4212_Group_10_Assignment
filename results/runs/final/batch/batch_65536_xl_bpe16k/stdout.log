@@ -1,0 +1,29 @@
+[batch_65536_xl_bpe16k] params total=97,733,376 non-embedding=84,953,856 | tokens/step=65,536 | budget=1800s | device=cuda
+  [val] step      0 |     0.0s | loss 9.8883 | bpb 3.2159
+  step      1 |     3.3s | loss 9.8840 | lr 3.20e-05 | 20,006 tok/s
+  [val] step     38 |   120.2s | loss 6.8615 | bpb 2.2315
+  step     50 |   157.8s | loss 6.7387 | lr 1.60e-03 | 20,777 tok/s
+  [val] step     77 |   242.6s | loss 6.2681 | bpb 2.0385
+  step    100 |   314.8s | loss 6.1458 | lr 3.20e-03 | 20,872 tok/s
+  [val] step    115 |   363.0s | loss 5.9531 | bpb 1.9361
+  step    150 |   472.4s | loss 5.8594 | lr 2.74e-03 | 20,802 tok/s
+  [val] step    154 |   484.8s | loss 5.7219 | bpb 1.8609
+  [val] step    193 |   606.4s | loss 5.5055 | bpb 1.7905
+  step    200 |   628.4s | loss 5.5281 | lr 2.42e-03 | 20,995 tok/s
+  [val] step    232 |   729.4s | loss 5.2911 | bpb 1.7208
+  step    250 |   786.1s | loss 5.2908 | lr 2.05e-03 | 20,786 tok/s
+  [val] step    271 |   851.5s | loss 5.1225 | bpb 1.6659
+  step    300 |   943.0s | loss 5.1140 | lr 1.66e-03 | 20,882 tok/s
+  [val] step    310 |   974.1s | loss 4.9824 | bpb 1.6204
+  [val] step    349 |  1095.8s | loss 4.8559 | bpb 1.5792
+  step    350 |  1098.9s | loss 4.9683 | lr 1.28e-03 | 21,015 tok/s
+  [val] step    388 |  1217.2s | loss 4.7513 | bpb 1.5452
+  step    400 |  1255.3s | loss 4.7638 | lr 9.30e-04 | 20,954 tok/s
+  [val] step    427 |  1339.7s | loss 4.6544 | bpb 1.5137
+  step    450 |  1411.2s | loss 4.7327 | lr 6.44e-04 | 21,019 tok/s
+  [val] step    466 |  1461.0s | loss 4.5774 | bpb 1.4887
+  step    500 |  1567.6s | loss 4.6558 | lr 4.40e-04 | 20,949 tok/s
+  [val] step    505 |  1583.1s | loss 4.5243 | bpb 1.4714
+  [val] step    544 |  1705.0s | loss 4.4828 | bpb 1.4579
+  step    550 |  1723.6s | loss 4.5902 | lr 3.34e-04 | 21,006 tok/s
+[batch_65536_xl_bpe16k] DONE | val loss 4.4993 | ppl 89.95 | bpb 1.4633 | 37.7M tokens (0.30 epochs)

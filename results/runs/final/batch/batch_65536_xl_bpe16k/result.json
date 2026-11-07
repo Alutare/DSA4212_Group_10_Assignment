@@ -1,0 +1,183 @@
+{
+  "name": "batch_65536_xl_bpe16k",
+  "config_name": "batch_65536_xl_bpe16k",
+  "study": "batch",
+  "stage": "final",
+  "seed": 1337,
+  "args": {
+    "name": "batch_65536_xl_bpe16k",
+    "config_name": "batch_65536_xl_bpe16k",
+    "study": "batch",
+    "stage": "final",
+    "data_dir": "/content/data/bpe16k",
+    "out_dir": "/content/drive/MyDrive/DSA4212/runs/final/batch/batch_65536_xl_bpe16k",
+    "n_layer": 12,
+    "n_head": 12,
+    "n_embd": 768,
+    "block_size": 256,
+    "dropout": 0.0,
+    "batch_size": 16,
+    "grad_accum": 16,
+    "lr": 0.0032,
+    "min_lr_ratio": 0.1,
+    "warmup_steps": 100,
+    "weight_decay": 0.1,
+    "beta1": 0.9,
+    "beta2": 0.95,
+    "grad_clip": 1.0,
+    "budget_seconds": 1800.0,
+    "max_steps": 0,
+    "train_fraction": 1.0,
+    "dtype": "float16",
+    "compile": false,
+    "device": "cuda",
+    "peak_tflops": 65.0,
+    "seed": 1337,
+    "eval_every_seconds": 120.0,
+    "eval_windows": 64,
+    "eval_batch_size": 32,
+    "ckpt_every_seconds": 300.0,
+    "log_every": 50,
+    "force": false
+  },
+  "tokenizer_name": "bpe16k",
+  "vocab_size": 16384,
+  "params": {
+    "total": 97733376,
+    "embedding": 12582912,
+    "position": 196608,
+    "non_embedding": 84953856
+  },
+  "flops_per_token": 613532160,
+  "train_time": 1801.1977643920127,
+  "steps": 575,
+  "tokens_seen": 37683200,
+  "tokens_per_step": 65536,
+  "train_tokens_available": 123791832,
+  "epochs": 0.30440780616284924,
+  "tokens_per_param_total": 0.38557145513933744,
+  "tokens_per_param_nonemb": 0.44357256720636673,
+  "tokens_per_sec": 20921.18963556443,
+  "mfu": 0.19747419487503784,
+  "peak_mem_gb": 3.985432064,
+  "gpu": "Tesla T4",
+  "torch": "2.11.0+cu130",
+  "git_sha": "c2ef30a8a06241fba604439bfa16d5937c38ba45",
+  "diverged": false,
+  "n_resumes": 0,
+  "val": {
+    "loss": 4.499268037559073,
+    "ppl": 89.95126624968223,
+    "bits_per_token": 6.491071685416693,
+    "bpb": 1.4632515117220317,
+    "n_scored": 258789,
+    "stride": 256
+  },
+  "val_curve": [
+    {
+      "step": 0,
+      "train_time": 0.0,
+      "tokens": 0,
+      "loss": 9.888307089472397,
+      "bpb": 3.2158742658265544
+    },
+    {
+      "step": 38,
+      "train_time": 120.15811032299825,
+      "tokens": 2490368,
+      "loss": 6.861477979611176,
+      "bpb": 2.2314891983542253
+    },
+    {
+      "step": 77,
+      "train_time": 242.6184116930035,
+      "tokens": 5046272,
+      "loss": 6.26809025761142,
+      "bpb": 2.038507701362886
+    },
+    {
+      "step": 115,
+      "train_time": 362.9589439780102,
+      "tokens": 7536640,
+      "loss": 5.95306864033747,
+      "bpb": 1.936056401761873
+    },
+    {
+      "step": 154,
+      "train_time": 484.80674198500674,
+      "tokens": 10092544,
+      "loss": 5.7218879913798375,
+      "bpb": 1.8608718536877698
+    },
+    {
+      "step": 193,
+      "train_time": 606.3741365470069,
+      "tokens": 12648448,
+      "loss": 5.50547476806566,
+      "bpb": 1.7904899663390659
+    },
+    {
+      "step": 232,
+      "train_time": 729.3768132850055,
+      "tokens": 15204352,
+      "loss": 5.2910990898392125,
+      "bpb": 1.7207707292047818
+    },
+    {
+      "step": 271,
+      "train_time": 851.5082541950032,
+      "tokens": 17760256,
+      "loss": 5.12252733921257,
+      "bpb": 1.6659478409307407
+    },
+    {
+      "step": 310,
+      "train_time": 974.1457304640026,
+      "tokens": 20316160,
+      "loss": 4.9824114866723725,
+      "bpb": 1.6203793770530266
+    },
+    {
+      "step": 349,
+      "train_time": 1095.802672204005,
+      "tokens": 22872064,
+      "loss": 4.855865178134744,
+      "bpb": 1.579223998950462
+    },
+    {
+      "step": 388,
+      "train_time": 1217.2363509970091,
+      "tokens": 25427968,
+      "loss": 4.751290063122822,
+      "bpb": 1.5452140902603548
+    },
+    {
+      "step": 427,
+      "train_time": 1339.7055871170105,
+      "tokens": 27983872,
+      "loss": 4.65443001276212,
+      "bpb": 1.5137132741425716
+    },
+    {
+      "step": 466,
+      "train_time": 1461.0299363830109,
+      "tokens": 30539776,
+      "loss": 4.577432922449105,
+      "bpb": 1.4886722879514398
+    },
+    {
+      "step": 505,
+      "train_time": 1583.069101401008,
+      "tokens": 33095680,
+      "loss": 4.524269521458702,
+      "bpb": 1.4713824918739218
+    },
+    {
+      "step": 544,
+      "train_time": 1705.0029981700136,
+      "tokens": 35651584,
+      "loss": 4.482834184141346,
+      "bpb": 1.4579068955186474
+    }
+  ]
+}

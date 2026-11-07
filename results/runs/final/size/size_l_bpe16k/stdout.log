@@ -1,0 +1,136 @@
+[size_l_bpe16k] params total=33,694,208 non-embedding=25,174,528 | tokens/step=16,384 | budget=1800s | device=cuda
+  [val] step      0 |     0.0s | loss 9.7871 | bpb 3.1830
+  step      1 |     0.4s | loss 9.7824 | lr 2.40e-05 | 46,090 tok/s
+  step     50 |    12.0s | loss 6.7405 | lr 1.20e-03 | 69,007 tok/s
+  step    100 |    24.2s | loss 6.2187 | lr 2.40e-03 | 67,113 tok/s
+  step    150 |    36.6s | loss 6.0294 | lr 2.40e-03 | 66,009 tok/s
+  step    200 |    49.4s | loss 5.7860 | lr 2.40e-03 | 64,019 tok/s
+  step    250 |    62.5s | loss 5.6020 | lr 2.39e-03 | 62,376 tok/s
+  step    300 |    76.0s | loss 5.5829 | lr 2.39e-03 | 60,991 tok/s
+  step    350 |    89.9s | loss 5.3714 | lr 2.39e-03 | 58,585 tok/s
+  step    400 |   104.3s | loss 5.1419 | lr 2.38e-03 | 57,060 tok/s
+  step    450 |   119.1s | loss 5.1257 | lr 2.38e-03 | 55,448 tok/s
+  [val] step    454 |   120.3s | loss 5.0169 | bpb 1.6316
+  step    500 |   134.2s | loss 5.0326 | lr 2.37e-03 | 54,114 tok/s
+  step    550 |   149.8s | loss 4.9664 | lr 2.36e-03 | 52,504 tok/s
+  step    600 |   165.5s | loss 4.9599 | lr 2.36e-03 | 52,278 tok/s
+  step    650 |   180.7s | loss 4.8878 | lr 2.35e-03 | 53,748 tok/s
+  step    700 |   195.9s | loss 4.7794 | lr 2.34e-03 | 54,036 tok/s
+  step    750 |   211.1s | loss 4.7820 | lr 2.33e-03 | 54,019 tok/s
+  step    800 |   226.3s | loss 4.6319 | lr 2.32e-03 | 53,585 tok/s
+  [val] step    846 |   240.5s | loss 4.5780 | bpb 1.4889
+  step    850 |   241.7s | loss 4.6673 | lr 2.31e-03 | 53,192 tok/s
+  step    900 |   257.1s | loss 4.6019 | lr 2.29e-03 | 53,253 tok/s
+  step    950 |   272.3s | loss 4.4740 | lr 2.28e-03 | 53,868 tok/s
+  step   1000 |   287.5s | loss 4.5150 | lr 2.27e-03 | 54,022 tok/s
+  step   1050 |   302.6s | loss 4.4091 | lr 2.25e-03 | 54,216 tok/s
+  step   1100 |   317.7s | loss 4.3274 | lr 2.24e-03 | 54,151 tok/s
+  step   1150 |   333.8s | loss 4.4302 | lr 2.22e-03 | 51,156 tok/s
+  step   1200 |   349.3s | loss 4.3145 | lr 2.21e-03 | 52,568 tok/s
+  [val] step   1237 |   360.6s | loss 4.2827 | bpb 1.3928
+  step   1250 |   364.6s | loss 4.3973 | lr 2.19e-03 | 53,847 tok/s
+  step   1300 |   379.7s | loss 4.2620 | lr 2.17e-03 | 54,046 tok/s
+  step   1350 |   394.9s | loss 4.2794 | lr 2.15e-03 | 53,871 tok/s
+  step   1400 |   410.3s | loss 4.2258 | lr 2.14e-03 | 53,394 tok/s
+  step   1450 |   425.6s | loss 4.2596 | lr 2.12e-03 | 53,229 tok/s
+  step   1500 |   441.0s | loss 4.2513 | lr 2.10e-03 | 53,340 tok/s
+  step   1550 |   456.3s | loss 4.1954 | lr 2.08e-03 | 53,540 tok/s
+  step   1600 |   471.6s | loss 4.1930 | lr 2.05e-03 | 53,599 tok/s
+  [val] step   1630 |   480.8s | loss 4.1132 | bpb 1.3377
+  step   1650 |   486.8s | loss 4.1994 | lr 2.03e-03 | 53,699 tok/s
+  step   1700 |   502.1s | loss 4.1475 | lr 2.01e-03 | 53,662 tok/s
+  step   1750 |   517.4s | loss 4.1141 | lr 1.99e-03 | 53,759 tok/s
+  step   1800 |   532.6s | loss 4.1068 | lr 1.97e-03 | 53,830 tok/s
+  step   1850 |   547.8s | loss 4.1308 | lr 1.94e-03 | 53,902 tok/s
+  step   1900 |   563.0s | loss 4.0540 | lr 1.92e-03 | 53,918 tok/s
+  step   1950 |   578.1s | loss 4.0080 | lr 1.90e-03 | 54,056 tok/s
+  step   2000 |   593.3s | loss 4.0491 | lr 1.87e-03 | 54,006 tok/s
+  [val] step   2025 |   600.9s | loss 3.9841 | bpb 1.2957
+  step   2050 |   608.4s | loss 4.0390 | lr 1.85e-03 | 54,043 tok/s
+  step   2100 |   623.7s | loss 4.1076 | lr 1.82e-03 | 53,688 tok/s
+  step   2150 |   639.1s | loss 4.0334 | lr 1.80e-03 | 53,136 tok/s
+  step   2200 |   654.5s | loss 3.9606 | lr 1.77e-03 | 53,307 tok/s
+  step   2250 |   669.8s | loss 4.0152 | lr 1.74e-03 | 53,542 tok/s
+  step   2300 |   685.0s | loss 3.9704 | lr 1.72e-03 | 53,860 tok/s
+  step   2350 |   700.2s | loss 3.9960 | lr 1.69e-03 | 53,967 tok/s
+  step   2400 |   715.3s | loss 4.0066 | lr 1.66e-03 | 54,022 tok/s
+  [val] step   2419 |   721.1s | loss 3.8996 | bpb 1.2682
+  step   2450 |   730.5s | loss 3.9740 | lr 1.64e-03 | 53,987 tok/s
+  step   2500 |   745.7s | loss 3.9749 | lr 1.61e-03 | 53,934 tok/s
+  step   2550 |   760.9s | loss 3.8637 | lr 1.58e-03 | 53,784 tok/s
+  step   2600 |   776.2s | loss 3.8745 | lr 1.55e-03 | 53,574 tok/s
+  step   2650 |   791.5s | loss 3.8765 | lr 1.52e-03 | 53,695 tok/s
+  step   2700 |   806.7s | loss 3.8553 | lr 1.50e-03 | 53,660 tok/s
+  step   2750 |   822.1s | loss 3.9480 | lr 1.47e-03 | 53,423 tok/s
+  step   2800 |   837.4s | loss 3.8640 | lr 1.44e-03 | 53,486 tok/s
+  [val] step   2813 |   841.4s | loss 3.8144 | bpb 1.2405
+  step   2850 |   852.7s | loss 3.8377 | lr 1.41e-03 | 53,409 tok/s
+  step   2900 |   868.1s | loss 3.7658 | lr 1.38e-03 | 53,347 tok/s
+  step   2950 |   883.5s | loss 3.7557 | lr 1.35e-03 | 53,308 tok/s
+  step   3000 |   898.8s | loss 3.8797 | lr 1.32e-03 | 53,269 tok/s
+  step   3050 |   914.2s | loss 3.8106 | lr 1.29e-03 | 53,498 tok/s
+  step   3100 |   929.5s | loss 3.9791 | lr 1.26e-03 | 53,218 tok/s
+  step   3150 |   945.0s | loss 3.8300 | lr 1.24e-03 | 53,158 tok/s
+  step   3200 |   960.3s | loss 3.7507 | lr 1.21e-03 | 53,425 tok/s
+  [val] step   3204 |   961.5s | loss 3.7432 | bpb 1.2174
+  step   3250 |   975.5s | loss 3.9155 | lr 1.18e-03 | 53,715 tok/s
+  step   3300 |   990.7s | loss 3.7937 | lr 1.15e-03 | 53,994 tok/s
+  step   3350 |  1005.9s | loss 3.6648 | lr 1.12e-03 | 53,949 tok/s
+  step   3400 |  1021.1s | loss 3.7278 | lr 1.09e-03 | 53,909 tok/s
+  step   3450 |  1036.3s | loss 3.6546 | lr 1.07e-03 | 53,953 tok/s
+  step   3500 |  1051.5s | loss 3.7274 | lr 1.04e-03 | 53,735 tok/s
+  step   3550 |  1066.8s | loss 3.6342 | lr 1.01e-03 | 53,632 tok/s
+  [val] step   3599 |  1081.8s | loss 3.6725 | bpb 1.1944
+  step   3600 |  1082.1s | loss 3.6882 | lr 9.83e-04 | 53,550 tok/s
+  step   3650 |  1097.4s | loss 3.7257 | lr 9.56e-04 | 53,401 tok/s
+  step   3700 |  1112.8s | loss 3.7812 | lr 9.29e-04 | 53,376 tok/s
+  step   3750 |  1128.1s | loss 3.7812 | lr 9.02e-04 | 53,407 tok/s
+  step   3800 |  1143.5s | loss 3.6238 | lr 8.75e-04 | 53,424 tok/s
+  step   3850 |  1158.8s | loss 3.6912 | lr 8.49e-04 | 53,279 tok/s
+  step   3900 |  1174.2s | loss 3.6766 | lr 8.23e-04 | 53,210 tok/s
+  step   3950 |  1189.6s | loss 3.6991 | lr 7.98e-04 | 53,132 tok/s
+  [val] step   3990 |  1202.0s | loss 3.6212 | bpb 1.1777
+  step   4000 |  1205.0s | loss 3.6712 | lr 7.72e-04 | 53,403 tok/s
+  step   4050 |  1220.4s | loss 3.7167 | lr 7.48e-04 | 53,251 tok/s
+  step   4100 |  1235.9s | loss 3.6309 | lr 7.23e-04 | 52,825 tok/s
+  step   4150 |  1251.2s | loss 3.6691 | lr 6.99e-04 | 53,360 tok/s
+  step   4200 |  1266.5s | loss 3.6377 | lr 6.76e-04 | 53,705 tok/s
+  step   4250 |  1281.6s | loss 3.6079 | lr 6.53e-04 | 54,012 tok/s
+  step   4300 |  1296.9s | loss 3.6951 | lr 6.31e-04 | 53,778 tok/s
+  step   4350 |  1312.2s | loss 3.6376 | lr 6.09e-04 | 53,594 tok/s
+  [val] step   4382 |  1322.0s | loss 3.5751 | bpb 1.1627
+  step   4400 |  1327.5s | loss 3.5695 | lr 5.87e-04 | 53,284 tok/s
+  step   4450 |  1343.0s | loss 3.6287 | lr 5.66e-04 | 53,142 tok/s
+  step   4500 |  1358.4s | loss 3.5969 | lr 5.46e-04 | 53,067 tok/s
+  step   4550 |  1373.8s | loss 3.6691 | lr 5.26e-04 | 53,060 tok/s
+  step   4600 |  1389.3s | loss 3.6497 | lr 5.06e-04 | 52,959 tok/s
+  step   4650 |  1404.8s | loss 3.5956 | lr 4.87e-04 | 52,965 tok/s
+  step   4700 |  1420.3s | loss 3.5506 | lr 4.69e-04 | 52,850 tok/s
+  step   4750 |  1435.7s | loss 3.4942 | lr 4.51e-04 | 52,949 tok/s
+  [val] step   4771 |  1442.2s | loss 3.5287 | bpb 1.1476
+  step   4800 |  1451.2s | loss 3.6242 | lr 4.34e-04 | 53,041 tok/s
+  step   4850 |  1466.6s | loss 3.4938 | lr 4.18e-04 | 53,170 tok/s
+  step   4900 |  1482.0s | loss 3.6160 | lr 4.02e-04 | 53,062 tok/s
+  step   4950 |  1497.4s | loss 3.5452 | lr 3.87e-04 | 53,183 tok/s
+  step   5000 |  1512.7s | loss 3.5856 | lr 3.73e-04 | 53,499 tok/s
+  step   5050 |  1528.1s | loss 3.5142 | lr 3.60e-04 | 53,288 tok/s
+  step   5100 |  1543.5s | loss 3.6175 | lr 3.47e-04 | 53,264 tok/s
+  step   5150 |  1558.9s | loss 3.6197 | lr 3.34e-04 | 53,134 tok/s
+  [val] step   5161 |  1562.3s | loss 3.4911 | bpb 1.1354
+  step   5200 |  1574.3s | loss 3.4857 | lr 3.23e-04 | 53,106 tok/s
+  step   5250 |  1589.7s | loss 3.5285 | lr 3.12e-04 | 53,167 tok/s
+  step   5300 |  1605.2s | loss 3.5000 | lr 3.02e-04 | 53,083 tok/s
+  step   5350 |  1620.6s | loss 3.5147 | lr 2.93e-04 | 52,972 tok/s
+  step   5400 |  1636.1s | loss 3.4876 | lr 2.84e-04 | 53,059 tok/s
+  step   5450 |  1651.5s | loss 3.5025 | lr 2.76e-04 | 53,026 tok/s
+  step   5500 |  1667.0s | loss 3.5463 | lr 2.69e-04 | 53,004 tok/s
+  step   5550 |  1682.4s | loss 3.4369 | lr 2.63e-04 | 53,004 tok/s
+  [val] step   5550 |  1682.4s | loss 3.4742 | bpb 1.1299
+  step   5600 |  1697.9s | loss 3.4836 | lr 2.57e-04 | 52,892 tok/s
+  step   5650 |  1713.4s | loss 3.5168 | lr 2.52e-04 | 52,844 tok/s
+  step   5700 |  1728.9s | loss 3.5347 | lr 2.48e-04 | 53,004 tok/s
+  step   5750 |  1744.3s | loss 3.4155 | lr 2.45e-04 | 53,002 tok/s
+  step   5800 |  1759.8s | loss 3.5355 | lr 2.43e-04 | 53,003 tok/s
+  step   5850 |  1775.2s | loss 3.4193 | lr 2.41e-04 | 53,061 tok/s
+  step   5900 |  1790.7s | loss 3.4542 | lr 2.40e-04 | 52,956 tok/s
+[size_l_bpe16k] DONE | val loss 3.4976 | ppl 33.04 | bpb 1.1375 | 97.2M tokens (0.78 epochs)

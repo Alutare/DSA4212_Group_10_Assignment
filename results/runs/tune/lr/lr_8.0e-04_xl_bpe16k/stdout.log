@@ -1,0 +1,15 @@
+[lr_8.0e-04_xl_bpe16k] params total=97,733,376 non-embedding=84,953,856 | tokens/step=16,384 | budget=300s | device=cuda
+  [val] step      0 |     0.0s | loss 9.8883 | bpb 3.2159
+  step      1 |     0.8s | loss 9.8870 | lr 8.00e-06 | 21,659 tok/s
+  step     50 |    32.1s | loss 6.8253 | lr 4.00e-04 | 25,595 tok/s
+  step    100 |    64.6s | loss 6.2105 | lr 8.00e-04 | 25,259 tok/s
+  step    150 |    97.2s | loss 6.0353 | lr 6.31e-04 | 25,106 tok/s
+  [val] step    185 |   120.1s | loss 5.7382 | bpb 1.8662
+  step    200 |   129.9s | loss 5.7875 | lr 5.18e-04 | 25,016 tok/s
+  step    250 |   163.0s | loss 5.6137 | lr 3.94e-04 | 24,764 tok/s
+  step    300 |   196.1s | loss 5.6068 | lr 2.75e-04 | 24,736 tok/s
+  step    350 |   229.2s | loss 5.4500 | lr 1.76e-04 | 24,739 tok/s
+  [val] step    367 |   240.5s | loss 5.2762 | bpb 1.7159
+  step    400 |   262.4s | loss 5.2823 | lr 1.09e-04 | 24,726 tok/s
+  step    450 |   295.4s | loss 5.2869 | lr 8.05e-05 | 24,819 tok/s
+[lr_8.0e-04_xl_bpe16k] DONE | val loss 5.2287 | ppl 186.55 | bpb 1.7005 | 7.5M tokens (0.06 epochs)

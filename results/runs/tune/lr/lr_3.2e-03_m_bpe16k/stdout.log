@@ -1,0 +1,45 @@
+[lr_3.2e-03_m_bpe16k] params total=17,011,584 non-embedding=10,621,824 | tokens/step=16,384 | budget=300s | device=cuda
+  [val] step      0 |     0.0s | loss 9.7440 | bpb 3.1689
+  step      1 |     0.3s | loss 9.7409 | lr 3.20e-05 | 54,095 tok/s
+  step     50 |     7.7s | loss 6.7833 | lr 1.60e-03 | 108,039 tok/s
+  step    100 |    15.3s | loss 6.2722 | lr 3.20e-03 | 108,183 tok/s
+  step    150 |    22.9s | loss 6.0388 | lr 3.16e-03 | 107,877 tok/s
+  step    200 |    30.5s | loss 5.7939 | lr 3.13e-03 | 108,007 tok/s
+  step    250 |    38.1s | loss 5.6149 | lr 3.09e-03 | 107,933 tok/s
+  step    300 |    45.7s | loss 5.6127 | lr 3.04e-03 | 107,986 tok/s
+  step    350 |    53.3s | loss 5.4293 | lr 2.98e-03 | 107,929 tok/s
+  step    400 |    60.8s | loss 5.2059 | lr 2.92e-03 | 108,172 tok/s
+  step    450 |    68.4s | loss 5.1720 | lr 2.85e-03 | 108,079 tok/s
+  step    500 |    76.0s | loss 5.0823 | lr 2.77e-03 | 108,056 tok/s
+  step    550 |    83.6s | loss 4.9677 | lr 2.68e-03 | 108,173 tok/s
+  step    600 |    91.1s | loss 4.9726 | lr 2.59e-03 | 108,101 tok/s
+  step    650 |    98.7s | loss 4.8890 | lr 2.50e-03 | 108,227 tok/s
+  step    700 |   106.3s | loss 4.7812 | lr 2.40e-03 | 107,974 tok/s
+  step    750 |   113.9s | loss 4.8004 | lr 2.29e-03 | 108,139 tok/s
+  [val] step    791 |   120.1s | loss 4.6341 | bpb 1.5071
+  step    800 |   121.5s | loss 4.6480 | lr 2.19e-03 | 108,026 tok/s
+  step    850 |   129.0s | loss 4.6749 | lr 2.08e-03 | 108,115 tok/s
+  step    900 |   136.6s | loss 4.6070 | lr 1.96e-03 | 108,083 tok/s
+  step    950 |   144.2s | loss 4.4806 | lr 1.85e-03 | 108,159 tok/s
+  step   1000 |   151.8s | loss 4.5313 | lr 1.74e-03 | 108,005 tok/s
+  step   1050 |   159.3s | loss 4.4144 | lr 1.62e-03 | 108,093 tok/s
+  step   1100 |   166.9s | loss 4.3429 | lr 1.51e-03 | 108,008 tok/s
+  step   1150 |   174.5s | loss 4.4206 | lr 1.40e-03 | 108,001 tok/s
+  step   1200 |   182.1s | loss 4.3015 | lr 1.29e-03 | 107,965 tok/s
+  step   1250 |   189.7s | loss 4.3979 | lr 1.18e-03 | 108,011 tok/s
+  step   1300 |   197.3s | loss 4.2284 | lr 1.08e-03 | 107,997 tok/s
+  step   1350 |   204.9s | loss 4.2658 | lr 9.79e-04 | 107,857 tok/s
+  step   1400 |   212.5s | loss 4.1916 | lr 8.86e-04 | 107,880 tok/s
+  step   1450 |   220.1s | loss 4.2291 | lr 7.98e-04 | 107,919 tok/s
+  step   1500 |   227.6s | loss 4.2135 | lr 7.16e-04 | 108,043 tok/s
+  step   1550 |   235.2s | loss 4.1821 | lr 6.40e-04 | 107,977 tok/s
+  [val] step   1583 |   240.2s | loss 4.1047 | bpb 1.3349
+  step   1600 |   242.8s | loss 4.1509 | lr 5.72e-04 | 108,106 tok/s
+  step   1650 |   250.4s | loss 4.1700 | lr 5.11e-04 | 108,098 tok/s
+  step   1700 |   258.0s | loss 4.1094 | lr 4.58e-04 | 107,970 tok/s
+  step   1750 |   265.5s | loss 4.0898 | lr 4.14e-04 | 108,007 tok/s
+  step   1800 |   273.1s | loss 4.0783 | lr 3.77e-04 | 108,029 tok/s
+  step   1850 |   280.7s | loss 4.1010 | lr 3.50e-04 | 107,953 tok/s
+  step   1900 |   288.3s | loss 4.0395 | lr 3.31e-04 | 108,121 tok/s
+  step   1950 |   295.9s | loss 3.9865 | lr 3.21e-04 | 108,054 tok/s
+[lr_3.2e-03_m_bpe16k] DONE | val loss 4.0481 | ppl 57.29 | bpb 1.3165 | 32.4M tokens (0.26 epochs)

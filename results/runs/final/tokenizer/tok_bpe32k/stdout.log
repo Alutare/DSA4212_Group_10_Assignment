@@ -1,0 +1,32 @@
+[tok_bpe32k] RESUMED at step 6835, 1501s of 1800s budget already used
+[tok_bpe32k] params total=23,303,040 non-embedding=10,621,824 | tokens/step=16,384 | budget=1800s | device=cuda
+  step   6850 |  1504.0s | loss 3.7032 | lr 5.08e-04 | 71,127 tok/s
+  step   6900 |  1514.5s | loss 3.5921 | lr 4.95e-04 | 78,212 tok/s
+  step   6950 |  1525.1s | loss 3.8215 | lr 4.83e-04 | 77,230 tok/s
+  step   7000 |  1535.8s | loss 3.6972 | lr 4.71e-04 | 76,450 tok/s
+  step   7050 |  1546.7s | loss 3.7092 | lr 4.59e-04 | 75,554 tok/s
+  step   7100 |  1557.6s | loss 3.7354 | lr 4.47e-04 | 74,595 tok/s
+  step   7150 |  1568.8s | loss 3.7365 | lr 4.36e-04 | 73,291 tok/s
+  step   7200 |  1580.2s | loss 3.7007 | lr 4.25e-04 | 71,795 tok/s
+  step   7250 |  1591.9s | loss 3.7083 | lr 4.14e-04 | 70,452 tok/s
+  step   7300 |  1603.3s | loss 3.6190 | lr 4.04e-04 | 71,770 tok/s
+  step   7350 |  1614.5s | loss 3.7430 | lr 3.95e-04 | 72,830 tok/s
+  [val] step   7378 |  1620.8s | loss 3.7268 | bpb 1.1359
+  step   7400 |  1625.7s | loss 3.7332 | lr 3.86e-04 | 73,530 tok/s
+  step   7450 |  1636.8s | loss 3.7416 | lr 3.78e-04 | 73,481 tok/s
+  step   7500 |  1648.0s | loss 3.5708 | lr 3.71e-04 | 73,402 tok/s
+  step   7550 |  1659.2s | loss 3.7381 | lr 3.63e-04 | 72,836 tok/s
+  step   7600 |  1670.6s | loss 3.6194 | lr 3.57e-04 | 72,183 tok/s
+  step   7650 |  1681.9s | loss 3.6608 | lr 3.51e-04 | 72,127 tok/s
+  step   7700 |  1693.3s | loss 3.7303 | lr 3.45e-04 | 72,165 tok/s
+  step   7750 |  1704.6s | loss 3.6483 | lr 3.40e-04 | 72,590 tok/s
+  step   7800 |  1715.8s | loss 3.7350 | lr 3.36e-04 | 72,751 tok/s
+  step   7850 |  1727.1s | loss 3.8883 | lr 3.32e-04 | 72,745 tok/s
+  step   7900 |  1738.4s | loss 3.7513 | lr 3.28e-04 | 72,521 tok/s
+  [val] step   7911 |  1740.8s | loss 3.7010 | bpb 1.1280
+  step   7950 |  1749.7s | loss 3.6659 | lr 3.26e-04 | 72,451 tok/s
+  step   8000 |  1761.0s | loss 3.7147 | lr 3.23e-04 | 72,318 tok/s
+  step   8050 |  1772.4s | loss 3.6832 | lr 3.22e-04 | 72,107 tok/s
+  step   8100 |  1783.7s | loss 3.7646 | lr 3.21e-04 | 72,281 tok/s
+  step   8150 |  1795.0s | loss 3.8269 | lr 3.20e-04 | 72,266 tok/s
+[tok_bpe32k] DONE | val loss 3.7041 | ppl 40.61 | bpb 1.1290 | 133.9M tokens (1.16 epochs)
