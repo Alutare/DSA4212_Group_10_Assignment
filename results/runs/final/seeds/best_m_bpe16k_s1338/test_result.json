@@ -1,0 +1,23 @@
+{
+  "loss": 3.4868846137284013,
+  "ppl": 32.683965753916894,
+  "bits_per_token": 5.030511140377993,
+  "bpb": 1.1524807289469041,
+  "n_scored": 295997,
+  "stride": 256,
+  "split": "test",
+  "ckpt": "/content/drive/MyDrive/DSA4212/runs/final/seeds/best_m_bpe16k_s1338/ckpt.pt",
+  "tokenizer": "bpe16k",
+  "block_size": 256,
+  "params": {
+    "total": 17011584,
+    "embedding": 6291456,
+    "position": 98304,
+    "non_embedding": 10621824
+  },
+  "train_state": {
+    "step": 10006,
+    "train_time": 1800.1772632800203,
+    "tokens_seen": 163938304
+  }
+}

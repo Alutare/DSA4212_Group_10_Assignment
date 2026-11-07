@@ -1,0 +1,23 @@
+{
+  "loss": 3.747923073217784,
+  "ppl": 42.43286047258752,
+  "bits_per_token": 5.4071100313646205,
+  "bpb": 1.2038013248864767,
+  "n_scored": 287644,
+  "stride": 256,
+  "split": "test",
+  "ckpt": "/content/drive/MyDrive/DSA4212/runs/final/tokenizer/tok_gpt2/ckpt.pt",
+  "tokenizer": "gpt2",
+  "block_size": 256,
+  "params": {
+    "total": 30036864,
+    "embedding": 19316736,
+    "position": 98304,
+    "non_embedding": 10621824
+  },
+  "train_state": {
+    "step": 5623,
+    "train_time": 1800.088580512996,
+    "tokens_seen": 92127232
+  }
+}
