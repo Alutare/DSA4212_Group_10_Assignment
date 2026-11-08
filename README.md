@@ -244,7 +244,7 @@ DSA4212_Group_10_Assignment/
 │   ├── train_tokenizer.py
 │   └── ...
 ├── notebooks/
-│   └── DSA4212_Merged.ipynb
+│   └── DSA4212_Merged_v2.ipynb
 ├── results/
 │   ├── README.md
 │   ├── all_experiments.csv
@@ -266,7 +266,7 @@ The repository contains source code, lightweight experimental results, logs, and
 
 The complete experimental workflow is provided in our Google Colab notebook:
 
-**[`notebooks/DSA4212_Merged.ipynb`](notebooks/DSA4212_Merged.ipynb)**
+**[`notebooks/DSA4212_Merged_v2.ipynb`](notebooks/DSA4212_Merged_v2.ipynb)**
 
 The notebook contains the environment setup, dataset preparation, model training, hyperparameter tuning, evaluation, and analysis used in this project.
 
