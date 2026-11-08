@@ -85,8 +85,6 @@ Every M repeat has lower test BPB than every L repeat (mean gap 0.00942). This s
 
 Because training is time-limited, throughput varies between executions: M processed 152.57M to 163.99M tokens in the repeats versus 187.43M in the original size run. The reported standard deviations therefore combine seed and execution variability and should not be read as pure initialisation noise.
 
-![Seed Robustness](results/figures/seeds_summary.png)
-
 ### 1.5 Non-Neural References
 
 On test data, a BPE4K unigram model obtains 2.8483 BPB and an interpolated bigram model 1.9267, compared with 1.1921 for the M Transformer using BPE4K. A bzip2 reference obtains 2.2063 bits per byte but adapts to the evaluated text, so it is not an equivalent train-fitted held-out language model.
