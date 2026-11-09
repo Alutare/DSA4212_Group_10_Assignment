@@ -179,6 +179,7 @@ Results:
 ```
 DSA4212_Group_10_Assignment/
 ├── README.md
+├── authors.md
 ├── LICENSE
 ├── requirements.txt
 ├── requirements-data.txt
