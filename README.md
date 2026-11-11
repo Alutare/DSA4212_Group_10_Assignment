@@ -208,8 +208,12 @@ DSA4212_Group_10_Assignment/
 │   ├── figures/
 │   └── runs/
 └── report/
-    ├── report.tex
-    └── report.pdf
+    ├── main.tex
+    ├── report.pdf
+    └── figures/
+        ├── size_summary.png
+        ├── size_curves.png
+        └── tokenizer_summary.png
 ```
 
 Source code, lightweight results, logs, and figures are in the repository. Large model checkpoints and raw datasets are stored separately in Google Drive.
